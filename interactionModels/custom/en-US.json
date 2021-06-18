@@ -1,0 +1,387 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "hangman",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "How can I play this game",
+            "help",
+            "I do not know how to play",
+            "how to play",
+            "need help"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "IdentifyLetterIntent",
+          "slots": [
+            {
+              "name": "SpokenLetter",
+              "type": "LetterSlot",
+              "samples": [
+                "{SpokenLetter}",
+                "letter {SpokenLetter}",
+                "the letter {SpokenLetter}"
+              ]
+            }
+          ],
+          "samples": [
+            "{SpokenLetter}",
+            "is it {SpokenLetter}",
+            "letter is {SpokenLetter}",
+            "the letter is {SpokenLetter}"
+          ]
+        },
+        {
+          "name": "GamePlayIntent",
+          "slots": [],
+          "samples": [
+            "start",
+            "play",
+            "lets begin",
+            "lets play",
+            "start the game"
+          ]
+        }
+      ],
+      "types": [
+        {
+          "values": [
+            {
+              "id": "27",
+              "name": {
+                "value": "Ñ",
+                "synonyms": [
+                  "ñ.",
+                  "ñ"
+                ]
+              }
+            },
+            {
+              "id": "26",
+              "name": {
+                "value": "Z",
+                "synonyms": [
+                  "z.",
+                  "z"
+                ]
+              }
+            },
+            {
+              "id": "25",
+              "name": {
+                "value": "Y",
+                "synonyms": [
+                  "y.",
+                  "y"
+                ]
+              }
+            },
+            {
+              "id": "24",
+              "name": {
+                "value": "X",
+                "synonyms": [
+                  "x.",
+                  "x"
+                ]
+              }
+            },
+            {
+              "id": "23",
+              "name": {
+                "value": "W",
+                "synonyms": [
+                  "w.",
+                  "w"
+                ]
+              }
+            },
+            {
+              "id": "22",
+              "name": {
+                "value": "V",
+                "synonyms": [
+                  "v.",
+                  "v"
+                ]
+              }
+            },
+            {
+              "id": "21",
+              "name": {
+                "value": "U",
+                "synonyms": [
+                  "u.",
+                  "u"
+                ]
+              }
+            },
+            {
+              "id": "20",
+              "name": {
+                "value": "T",
+                "synonyms": [
+                  "t.",
+                  "t"
+                ]
+              }
+            },
+            {
+              "id": "19",
+              "name": {
+                "value": "S",
+                "synonyms": [
+                  "s.",
+                  "s"
+                ]
+              }
+            },
+            {
+              "id": "18",
+              "name": {
+                "value": "R",
+                "synonyms": [
+                  "r.",
+                  "r"
+                ]
+              }
+            },
+            {
+              "id": "17",
+              "name": {
+                "value": "Q",
+                "synonyms": [
+                  "q.",
+                  "q"
+                ]
+              }
+            },
+            {
+              "id": "16",
+              "name": {
+                "value": "P",
+                "synonyms": [
+                  "p.",
+                  "p"
+                ]
+              }
+            },
+            {
+              "id": "15",
+              "name": {
+                "value": "O",
+                "synonyms": [
+                  "o.",
+                  "o"
+                ]
+              }
+            },
+            {
+              "id": "14",
+              "name": {
+                "value": "N",
+                "synonyms": [
+                  "n.",
+                  "n"
+                ]
+              }
+            },
+            {
+              "id": "13",
+              "name": {
+                "value": "M",
+                "synonyms": [
+                  "m.",
+                  "m"
+                ]
+              }
+            },
+            {
+              "id": "12",
+              "name": {
+                "value": "L",
+                "synonyms": [
+                  "l.",
+                  "l"
+                ]
+              }
+            },
+            {
+              "id": "11",
+              "name": {
+                "value": "K",
+                "synonyms": [
+                  "k.",
+                  "k"
+                ]
+              }
+            },
+            {
+              "id": "10",
+              "name": {
+                "value": "J",
+                "synonyms": [
+                  "j.",
+                  "j"
+                ]
+              }
+            },
+            {
+              "id": "09",
+              "name": {
+                "value": "I",
+                "synonyms": [
+                  "i.",
+                  "i"
+                ]
+              }
+            },
+            {
+              "id": "08",
+              "name": {
+                "value": "H",
+                "synonyms": [
+                  "h.",
+                  "h"
+                ]
+              }
+            },
+            {
+              "id": "07",
+              "name": {
+                "value": "G",
+                "synonyms": [
+                  "g.",
+                  "g"
+                ]
+              }
+            },
+            {
+              "id": "06",
+              "name": {
+                "value": "F",
+                "synonyms": [
+                  "f.",
+                  "f"
+                ]
+              }
+            },
+            {
+              "id": "05",
+              "name": {
+                "value": "E",
+                "synonyms": [
+                  "e.",
+                  "e"
+                ]
+              }
+            },
+            {
+              "id": "04",
+              "name": {
+                "value": "D",
+                "synonyms": [
+                  "d.",
+                  "d"
+                ]
+              }
+            },
+            {
+              "id": "03",
+              "name": {
+                "value": "C",
+                "synonyms": [
+                  "c.",
+                  "c"
+                ]
+              }
+            },
+            {
+              "id": "02",
+              "name": {
+                "value": "B",
+                "synonyms": [
+                  "b.",
+                  "b"
+                ]
+              }
+            },
+            {
+              "id": "01",
+              "name": {
+                "value": "A",
+                "synonyms": [
+                  "a.",
+                  "a"
+                ]
+              }
+            }
+          ],
+          "name": "LetterSlot"
+        }
+      ]
+    },
+    "dialog": {
+      "intents": [
+        {
+          "name": "IdentifyLetterIntent",
+          "confirmationRequired": false,
+          "prompts": {},
+          "slots": [
+            {
+              "name": "SpokenLetter",
+              "type": "LetterSlot",
+              "elicitationRequired": true,
+              "confirmationRequired": false,
+              "prompts": {
+                "elicitation": "Elicit.Slot.1152124083206.910617404598"
+              },
+              "validations": [
+                {
+                  "type": "hasEntityResolutionMatch",
+                  "prompt": "Slot.Validation.933303101994.661790451300.357980131223"
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "delegationStrategy": "ALWAYS"
+    },
+    "prompts": [
+      {
+        "id": "Slot.Validation.933303101994.661790451300.357980131223",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I did not get that. Could you repeat that?"
+          }
+        ]
+      },
+      {
+        "id": "Elicit.Slot.1152124083206.910617404598",
+        "variations": [
+          {
+            "type": "PlainText",
+            "value": "I did not understand what letter you mean, can you repeat it for me?"
+          }
+        ]
+      }
+    ]
+  },
+  "version": "5"
+}
